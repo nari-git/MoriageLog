@@ -2,7 +2,7 @@
   "schemaVer": 1,
   "channel": "stable",
   "app": {
-    "latestVersion": "0.1.1",
+    "latestVersion": "0.1.2",
     "minSupportedVersion": "0.1.0",
     "installer": {
       "url": "https://github.com/nari-git/MoriageLog/releases/download/v0.1.0/MorisageLog-Setup-0.1.0.exe",
