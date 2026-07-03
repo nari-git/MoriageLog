@@ -6,7 +6,7 @@
     "minSupportedVersion": "0.1.0",
     "installer": {
       "url": "https://github.com/nari-git/MoriageLog/releases/download/v0.1.0/MorisageLog-Setup-0.1.0.exe",
-      "sha256": "4BC6C815246D380532BF4367E935BB39FA291A727945EB23B382C68B82B5D841",
+      "sha256": "BB8A72A89181105EF50C9FD9842B7627D4EA1051AD1B7427DA42BDCB6F01293E",
       "sizeBytes": 0,
       "releaseNotes": "初回配布"
     }
