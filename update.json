@@ -1,14 +1,14 @@
 {
-  "schemaVer": 1,
-  "channel": "stable",
-  "app": {
-    "latestVersion": "0.1.5",
-    "minSupportedVersion": "0.1.0",
-    "installer": {
-      "url": "https://github.com/nari-git/MoriageLog/releases/download/v0.1.5/MorisageLog-Setup-0.1.5.exe",
-      "sha256": "DFF3ADAE7D7E2B24AFBA2F3EB5DC11D25DA3F25EBE12058E30DAE9C476DC8C63",
-      "sizeBytes": 60138812,
-      "releaseNotes": "・演出をブラウザでドラッグ配置＋テンプレート保存/選択\n・中央演出（歓迎/記念/MVP）の色設定を追加\n・参加待ちオーバーレイの色設定＆参加取消の文言表示\n・参加者の番号表示を廃止（並び替えに対応）\n・更新後にアプリが自動再起動しない問題を修正\n・更新通知のリリースノートを別画面で表示"
-    }
-  }
+    "schemaVer":  1,
+    "channel":  "stable",
+    "app":  {
+                "latestVersion":  "0.1.6",
+                "minSupportedVersion":  "0.1.0",
+                "installer":  {
+                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.1.6/MorisageLog-Setup-0.1.6.exe",
+                                  "sha256":  "E6ED68686D6EDE37FAC67971D1D91AEAE8D84919CEE1B449A3E6AC7019BDF656",
+                                  "sizeBytes":  60153074,
+                                  "releaseNotes":  "参加待ちの複数人同時呼び出し\nコメントの流れ方追加(ニコニコ/ランダムポップ/降ってくる)\n初見バッジと久々バッジを個別に切替\n初見コメントの枠強調・バッジ位置・バッジ色/枠色の分離\nスタンプ/絵文字のコメビュ表示(YouTube/Twitch)\nチャネポの強調表示\nAIリスナー検索(あいまい名・話題で絞り込み)\n読み上げ名の前後付与・リスナー個別の敬称\n最大文字数制限"
+                              }
+            }
 }
