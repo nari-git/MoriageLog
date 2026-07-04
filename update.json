@@ -3,7 +3,7 @@
   "channel": "stable",
   "app": {
     "latestVersion": "0.1.3",
-    "minSupportedVersion": "0.1.3",
+    "minSupportedVersion": "0.1.0",
     "installer": {
       "url": "https://github.com/nari-git/MoriageLog/releases/download/v0.1.3/MorisageLog-Setup-0.1.3.exe",
       "sha256": "8409DD0117B0D941995093CFFBC966401A18EA417E591A0E7BAAA6C27D578FE4",
