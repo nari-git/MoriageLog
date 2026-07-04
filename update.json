@@ -2,13 +2,13 @@
     "schemaVer":  1,
     "channel":  "stable",
     "app":  {
-                "latestVersion":  "0.1.6",
+                "latestVersion":  "0.1.7",
                 "minSupportedVersion":  "0.1.0",
                 "installer":  {
-                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.1.6/MorisageLog-Setup-0.1.6.exe",
-                                  "sha256":  "E6ED68686D6EDE37FAC67971D1D91AEAE8D84919CEE1B449A3E6AC7019BDF656",
-                                  "sizeBytes":  60153074,
-                                  "releaseNotes":  "参加待ちの複数人同時呼び出し\nコメントの流れ方追加(ニコニコ/ランダムポップ/降ってくる)\n初見バッジと久々バッジを個別に切替\n初見コメントの枠強調・バッジ位置・バッジ色/枠色の分離\nスタンプ/絵文字のコメビュ表示(YouTube/Twitch)\nチャネポの強調表示\nAIリスナー検索(あいまい名・話題で絞り込み)\n読み上げ名の前後付与・リスナー個別の敬称\n最大文字数制限"
+                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.1.7/MorisageLog-Setup-0.1.7.exe",
+                                  "sha256":  "D06D6D5CEB244A24F39ED4796F6CAF4285C487078B7FF460984A91D03D4C385E",
+                                  "sizeBytes":  60158224,
+                                  "releaseNotes":  "スタンプ/エモート表示改善(名前保持・エモート語除去・画像表示)\nスタンプ専用効果音(7種選択・音量調整・連打1回)\nスタンプ/絵文字の履歴保存(再起動後も残る)\nTwitchチャンネルポイント引き換えのコメント表示(要 再認証)\n画面内容初期化ボタン(ランキング/ギフト/コメントをリセット)\nコメント名前の枠・色/流れる位置(上下・左右・中央を流れ方別に)\nリスナーごとの履歴表示・リスナー削除(履歴ごと)\n各機能設定にOBS用URL表示・コメントヘッダーにOBS操作を集約\n確認ダイアログを共通デザイン化"
                               }
             }
 }
