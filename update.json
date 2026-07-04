@@ -2,13 +2,13 @@
   "schemaVer": 1,
   "channel": "stable",
   "app": {
-    "latestVersion": "0.1.3",
+    "latestVersion": "0.1.5",
     "minSupportedVersion": "0.1.0",
     "installer": {
-      "url": "https://github.com/nari-git/MoriageLog/releases/download/v0.1.3/MorisageLog-Setup-0.1.3.exe",
-      "sha256": "8409DD0117B0D941995093CFFBC966401A18EA417E591A0E7BAAA6C27D578FE4",
-      "sizeBytes": 0,
-      "releaseNotes": "・演出をブラウザでドラッグ配置＋名前付きテンプレート保存/選択\n・参加待ちの文字色/背景色/アクセント色を設定可能に\n・参加者の番号表示を廃止（並び替えに対応）\n・コメント表示に既存コメント最新20件の初期表示\n・Ollama(qwen3:8b)の状態確認とアプリ内ダウンロード補助\n・テーマ配色（背景/パネル/文字など）のカスタマイズ\n・更新/終了などの確認ダイアログをアプリ内デザインに統一"
+      "url": "https://github.com/nari-git/MoriageLog/releases/download/v0.1.5/MorisageLog-Setup-0.1.5.exe",
+      "sha256": "DFF3ADAE7D7E2B24AFBA2F3EB5DC11D25DA3F25EBE12058E30DAE9C476DC8C63",
+      "sizeBytes": 60138812,
+      "releaseNotes": "・演出をブラウザでドラッグ配置＋テンプレート保存/選択\n・中央演出（歓迎/記念/MVP）の色設定を追加\n・参加待ちオーバーレイの色設定＆参加取消の文言表示\n・参加者の番号表示を廃止（並び替えに対応）\n・更新後にアプリが自動再起動しない問題を修正\n・更新通知のリリースノートを別画面で表示"
     }
   }
 }
