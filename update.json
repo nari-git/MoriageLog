@@ -2,13 +2,13 @@
     "schemaVer":  1,
     "channel":  "stable",
     "app":  {
-                "latestVersion":  "0.1.8",
+                "latestVersion":  "0.1.9",
                 "minSupportedVersion":  "0.1.0",
                 "installer":  {
-                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.1.8/MorisageLog-Setup-0.1.8.exe",
-                                  "sha256":  "264728F1E929C03ED234F999954ED845E87039D1BA01C7F8AFC8A6862E3B8522",
-                                  "sizeBytes":  60189037,
-                                  "releaseNotes":  "多言語対応(日本語/英語)を追加\n演出テキスト(MVP/お礼/主役)を自由に編集可能に\nTikTok・ニコ生に対応(ブラウザ方式・ベータ)\nTwitch/YouTubeの自動再接続に対応(アプデ後に止まる問題を修正)\nダッシュボードUI整理・OBS用URLを各機能の上部に統一\n読み上げエンジンの接続状態表示・棒読みちゃん連携を安定化\n各種不具合修正\n※Twitch連携中の方は再連携(再認証)をお願いします"
+                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.1.9/MorisageLog-Setup-0.1.9.exe",
+                                  "sha256":  "8E0BA1ABB97EF9FDAAECFBB494F07854741BF163BA01D55640493104892B4F88",
+                                  "sizeBytes":  60227029,
+                                  "releaseNotes":  "翻訳を刷新：無料はローカル翻訳(translateLocally)でオフライン自動翻訳、PROはAIで全自動翻訳\nリスナーのアイコン表示(YouTube/Twitch)\n配信情報パネル(コメント数・ギフト・Twitch同時視聴者数)\nコメント表示の詳細設定(アイコン/名前/バッジのサイズ・ID表示)\nフォントのインポートに対応(ギャル文字/独自ゴシック等)\n演出テキストの文字サイズ・太字を追加\nコメビュ/OBSの分割表示を最大4窓に対応\n配色をダッシュボード用/設定用で個別に設定\nストックのピン留め表示を安定化・英語表示の補完・各種不具合修正"
                               }
             }
 }
