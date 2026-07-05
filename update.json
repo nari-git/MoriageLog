@@ -2,13 +2,13 @@
     "schemaVer":  1,
     "channel":  "stable",
     "app":  {
-                "latestVersion":  "0.1.9",
+                "latestVersion":  "0.2.0",
                 "minSupportedVersion":  "0.1.0",
                 "installer":  {
-                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.1.9/MorisageLog-Setup-0.1.9.exe",
-                                  "sha256":  "8E0BA1ABB97EF9FDAAECFBB494F07854741BF163BA01D55640493104892B4F88",
-                                  "sizeBytes":  60227029,
-                                  "releaseNotes":  "翻訳を刷新：無料はローカル翻訳(translateLocally)でオフライン自動翻訳、PROはAIで全自動翻訳\nリスナーのアイコン表示(YouTube/Twitch)\n配信情報パネル(コメント数・ギフト・Twitch同時視聴者数)\nコメント表示の詳細設定(アイコン/名前/バッジのサイズ・ID表示)\nフォントのインポートに対応(ギャル文字/独自ゴシック等)\n演出テキストの文字サイズ・太字を追加\nコメビュ/OBSの分割表示を最大4窓に対応\n配色をダッシュボード用/設定用で個別に設定\nストックのピン留め表示を安定化・英語表示の補完・各種不具合修正"
+                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.2.0/MorisageLog-Setup-0.2.0.exe",
+                                  "sha256":  "6C1C2649D6B3885A6CC7F773709D45A7D2C1003579D5B5058A296B3445383DBC",
+                                  "sizeBytes":  60216393,
+                                  "releaseNotes":  "音声が流れないバグを修正"
                               }
             }
 }
