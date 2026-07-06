@@ -2,13 +2,13 @@
     "schemaVer":  1,
     "channel":  "stable",
     "app":  {
-                "latestVersion":  "0.2.0",
+                "latestVersion":  "0.2.1",
                 "minSupportedVersion":  "0.1.0",
                 "installer":  {
-                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.2.0/MorisageLog-Setup-0.2.0.exe",
-                                  "sha256":  "6C1C2649D6B3885A6CC7F773709D45A7D2C1003579D5B5058A296B3445383DBC",
-                                  "sizeBytes":  60216393,
-                                  "releaseNotes":  "音声が流れないバグを修正"
+                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.2.1/MorisageLog-Setup-0.2.1.exe",
+                                  "sha256":  "B300A413EFE3F05EA90B21F7CCA2C1470471FD0C36EAB01CD5811FD67200561B",
+                                  "sizeBytes":  166255332,
+                                  "releaseNotes":  "オフライン翻訳(英↔日)同梱／コメジェネスキン／キャラ画像・テンプレ／3D+位置+ズーム／配信モード／手動コメントのTwitch投稿／Discord動作報告 ほか多数の追加・改善"
                               }
             }
 }
