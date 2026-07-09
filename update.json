@@ -2,13 +2,13 @@
     "schemaVer":  1,
     "channel":  "stable",
     "app":  {
-                "latestVersion":  "0.2.3",
+                "latestVersion":  "0.2.4",
                 "minSupportedVersion":  "0.1.0",
                 "installer":  {
-                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.2.3/MorisageLog-Setup-0.2.3.exe",
-                                  "sha256":  "69A228C6E169A0EFD46A22AE1DE63ABFF0EAD8B7A9EE16D1947A880922233CE0",
-                                  "sizeBytes":  166299923,
-                                  "releaseNotes":  "Update v0.2.3"
+                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.2.4/MorisageLog-Setup-0.2.4.exe",
+                                  "sha256":  "61396DA050533703903F95ACD350A3A739AB581F94E62D74D5A4C5289AF669CF",
+                                  "sizeBytes":  166360710,
+                                  "releaseNotes":  "v0.2.4"
                               }
             }
 }
