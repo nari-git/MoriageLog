@@ -2,13 +2,13 @@
     "schemaVer":  1,
     "channel":  "stable",
     "app":  {
-                "latestVersion":  "0.2.5",
+                "latestVersion":  "0.2.6",
                 "minSupportedVersion":  "0.1.0",
                 "installer":  {
-                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.2.5/MoriageLog-Setup-0.2.5.exe",
-                                  "sha256":  "F0ACF6A8EA1755E9F8A8AFAB2904A581FCF0B0EF3A5D63209DF43A837CB62D42",
-                                  "sizeBytes":  166392009,
-                                  "releaseNotes":  "サブスクリプション（月額プラン）に対応\n各機能の配信画面キャンバスにOBSプレビューを追加\nテストデータの削除機能を追加\nコメント数ランキングから配信者自身の手動コメントを除外\nライセンス画面のデザインを統一"
+                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.2.6/MoriageLog-Setup-0.2.6.exe",
+                                  "sha256":  "67DB53766D94514C2C5944A2B6E8A086DFBE1DCB3C81DA2244D5092B93AB8E4E",
+                                  "sizeBytes":  166389831,
+                                  "releaseNotes":  "旧バージョンからのデータ移行を改善\n各機能にOBSプレビューを追加\nテストデータ削除機能を追加"
                               }
             }
 }
