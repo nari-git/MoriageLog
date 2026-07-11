@@ -2,13 +2,13 @@
     "schemaVer":  1,
     "channel":  "stable",
     "app":  {
-                "latestVersion":  "0.2.6",
+                "latestVersion":  "0.2.7",
                 "minSupportedVersion":  "0.1.0",
                 "installer":  {
-                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.2.6/MoriageLog-Setup-0.2.6.exe",
-                                  "sha256":  "67DB53766D94514C2C5944A2B6E8A086DFBE1DCB3C81DA2244D5092B93AB8E4E",
-                                  "sizeBytes":  166389831,
-                                  "releaseNotes":  "旧バージョンからのデータ移行を改善\n各機能にOBSプレビューを追加\nテストデータ削除機能を追加"
+                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.2.7/MoriageLog-Setup-0.2.7.exe",
+                                  "sha256":  "2E2528DE3E121586E66B056C19A42767C7EC242F5BDB346D9F3A489B6B2611A0",
+                                  "sizeBytes":  166405701,
+                                  "releaseNotes":  "AIリスナー検索が「接続できない」となる不具合を修正\n参加待ちの背景の不透明度を設定できるように\nギフトのユーザー別集計にアイテム種別ごとの内訳を追加\nOBS連携を「設定 → 連携」に移動\n旧バージョンからのデータ移行を改善"
                               }
             }
 }
