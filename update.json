@@ -6,8 +6,8 @@
                 "minSupportedVersion":  "0.1.0",
                 "installer":  {
                                   "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.3.3/MoriageLog-Setup-0.3.3.exe",
-                                  "sha256":  "9D9AF50BF531E4AB00929FC0E4A6667C69ABC7DF59B73A670125389C36DF26DD",
-                                  "sizeBytes":  180429624,
+                                  "sha256":  "298771E34E4ADA59D214A30DD70EB4A4B2506AF93992170C4F97B0FD8638FE80",
+                                  "sizeBytes":  180455243,
                                   "releaseNotes":  "**Windowsのユーザー名が日本語の方で、ローカル翻訳が使えなかった問題を修正しました**\n\nユーザー名に日本語が含まれていると、翻訳エンジンが辞書を読み込めず、\n「辞書が壊れている可能性があります」と表示されていました。\n辞書は壊れておらず、入れ直しても直らない問題でした。\n\n**音声字幕：翻訳に失敗したときの案内を、実態に合うように直しました**"
                               }
             }
