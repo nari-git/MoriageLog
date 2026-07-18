@@ -2,13 +2,13 @@
     "schemaVer":  1,
     "channel":  "stable",
     "app":  {
-                "latestVersion":  "0.3.6",
+                "latestVersion":  "1.0.0",
                 "minSupportedVersion":  "0.1.0",
                 "installer":  {
-                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v0.3.6/MoriageLog-Setup-0.3.6.exe",
-                                  "sha256":  "DC9C370ECD361B0448E659EFA2FF6FD8BEE49B320478D25AF48B905EAC13E218",
-                                  "sizeBytes":  180658277,
-                                  "releaseNotes":  "・アプリ内アップデートの不具合を修正しました。更新時にインストーラーの進捗が表示され、更新後に自動で再起動するようになりました。\n・その他、細かな改善を行いました。"
+                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v1.0.0/MoriageLog-Setup-1.0.0.exe",
+                                  "sha256":  "E646DC0C6F3B48F4550D6DF0AEAD9E4928243262E4502790F352B5DAACD7C92A",
+                                  "sizeBytes":  180703106,
+                                  "releaseNotes":  "v1.0.0 正式リリース。ミラティブ・bilibili・SHOWROOM・ミクチャに対応（計11サービス）。詳細はリリースページをご覧ください。"
                               }
             }
 }
