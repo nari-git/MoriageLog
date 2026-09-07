@@ -2,12 +2,12 @@
     "schemaVer":  1,
     "channel":  "stable",
     "app":  {
-                "latestVersion":  "1.2.2",
+                "latestVersion":  "1.2.3",
                 "minSupportedVersion":  "0.1.0",
                 "installer":  {
-                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v1.2.2/MoriageLog-Setup-1.2.2.exe",
-                                  "sha256":  "E097471B3AA5DD6F752F95729026EC757D8292B64E7FF71C3F580829DFA1CA7F",
-                                  "sizeBytes":  61896107,
+                                  "url":  "https://github.com/nari-git/MoriageLog/releases/download/v1.2.3/MoriageLog-Setup-1.2.3.exe",
+                                  "sha256":  "5842CD4D1883FD7835249EA38F6C1B16A2F6B2A438726474B9BE6B925DD97255",
+                                  "sizeBytes":  61957277,
                                   "releaseNotes":  "## もりあげログ v1.2.2\n\n**〔機能〕から、スマホのリモコンを開けるようにしました。**\nこれまで入り口が 設定 →〔連携〕の中にしか無く、〔機能〕から探した方には\n見つけられない状態でした。\n\n---\n\n### 〔機能〕→〔スマホでリモコン〕\n\n押すと、スマホへ渡すものだけを出します。\n\n- **スマホで開くURL**（コピーできます）と、**QRコード**\n- アクセスコード（このコードを知っている端末だけが操作できます）\n- まだ使えない状態のときは、**その場で有効にできます**（コードはこちらで作ります）\n- LANへの公開が次の起動から効く場合は、その旨をその場に出します\n  （スマホで開けない理由が分からない、を避けるため）\n\nコードの再発行など細かい設定は、これまでどおり 設定 →〔連携〕にあります。\n\n### そのほか\n\n- 英語表示のとき、上の画面の文言が日本語のまま残っていたのを直しました\n"
                               }
             }
