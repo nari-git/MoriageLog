@@ -1,76 +1,78 @@
 {
-  "schemaVer": 1,
-  "updated": "2026-09-17",
-  "_readme": "ブラウザ方式のサイトのコメント欄の目印（DOMセレクタ）を、リリースを待たずに配るファイル。sites.<siteId> に目印の鍵（itemSelector / nameSelector / textSelector / giftSelector / giftNameSelector / giftCountMode）を書く。old.<鍵> には、置き換えてよい古い値を並べる（既定値と、前の配布の値は書かなくてよい）。_why は覚え書き（アプリは読まない）。上げるのは build/publish-dom-hints.ps1。★ 配布した目印は、次のリリースで SettingsStore.Defaults と FixSelectors にも入れる（配布は当座、既定値が本籍）。tests/test_dom_hints_file.js が形を守る。",
-  "sites": {
-    "niconico": {
-      "_why": "2026-09-17：data-name=comment-table-row / comment-body が無くなり、動きから探す受け皿で番号つきの本文が流れていた。知らせ（generalSystemMessage）はコメントにしない。ニコニ広告・ギフトは文の中に名前があり分けられないのでコメントのまま",
-      "itemSelector": "[data-name=\"comment-table-row\"], [role=\"row\"][data-comment-type]:not([data-comment-type=\"generalSystemMessage\"])",
-      "textSelector": "[data-name=\"comment-body\"], .comment-text",
-      "old": {
-        "itemSelector": [
-          "[data-name=\"comment-table-row\"]",
-          "[data-name=\"comment-table-row\"], [role=\"row\"][data-comment-type]"
-        ],
-        "textSelector": [
-          "[data-name=\"comment-body\"]"
-        ]
-      }
-    },
-    "showroom": {
-      "_why": "2026-09-17：.st-log__item はギフト記録・順位の記録にも同じ形で並ぶ。コメントだけに絞り、ギフト記録の行をギフトとして拾う。名前は dt が先に当たって「Class 28蔵馬」になっていたので、.st-fantitle-name を優先",
-      "itemSelector": ".comment-log .st-log__item:has(dd), .st-log__item:not(.gift-log *):not(.ranking-list *):not(:has(.st-gift__image)):has(dd)",
-      "nameSelector": ".st-fantitle-name, .st-logparts__define dt:not(:has(.st-fantitle-name))",
-      "giftSelector": ".gift-log .st-log__item, .st-log__item:has(.st-gift__image)",
-      "giftCountMode": "optional",
-      "old": {
-        "itemSelector": [
-          ".st-log__list .st-log__item, .st-log__item"
-        ],
-        "nameSelector": [
-          ".st-fantitle-name, .st-logparts__define dt"
-        ]
-      }
-    },
-    "whowatch": {
-      "_why": "2026-09-17：アイテムの知らせは div.comment-box.by-playitem の行（本文「ふわ粉を3個プレゼントしました」）。初コメの行にも by-playitem が付くので、数が読めたときだけ",
-      "giftSelector": ".comment-box.by-playitem .user-comment",
-      "giftNameSelector": ".message",
-      "giftCountMode": "required"
-    },
-    "mixch": {
-      "_why": "2026-09-17：スタンプの行（img[alt=stamp]）は本文が無く「16○○」がコメントとして流れていた。コメントから外し、スタンプとして拾う。知らせの行（.system-message-log）もコメントから外す",
-      "itemSelector": ".comment-scroll-container li:not(:has(img[alt=\"stamp\"])):not(:has(.system-message-log))",
-      "giftSelector": ".comment-scroll-container li:has(img[alt=\"stamp\"])",
-      "giftCountMode": "optional",
-      "old": {
-        "itemSelector": [
-          ".comment-scroll-container li"
-        ]
-      }
-    },
-    "kick": {
-      "_why": "2026-09-17：Kicks（投げ銭）の行は同じ一覧に来る。ステッカーの絵（/kicks/gifts/）で見分け、贈り物の名前は b、添え文は .whitespace-pre-line",
-      "textSelector": "span.font-normal, .whitespace-pre-line",
-      "giftSelector": "[data-index]:has(img[src*=\"/kicks/gifts/\"])",
-      "giftNameSelector": "b.font-semibold",
-      "giftCountMode": "optional",
-      "old": {
-        "textSelector": [
-          "span.font-normal"
-        ]
-      }
-    },
-    "twitcasting": {
-      "_why": "2026-09-17：アイテムはコメント欄ではなく、プレイヤーの上の演出（.tw-player-sender-layout > .sender-animation）に出る。贈り主の名前は <span>名前 @id</span> なので ::first-text で名前だけ",
-      "nameSelector": ".tw-comment-item-name, .tw-player-sender__sender-name::first-text",
-      "giftSelector": ".tw-player-sender-layout .sender-animation",
-      "giftCountMode": "optional",
-      "old": {
-        "nameSelector": [
-          ".tw-comment-item-name"
-        ]
-      }
-    }
+ "schemaVer": 1,
+ "updated": "2026-09-21",
+ "_readme": "ブラウザ方式のサイトのコメント欄の目印（DOMセレクタ）を、リリースを待たずに配るファイル。sites.<siteId> に目印の鍵（itemSelector / nameSelector / textSelector / giftSelector / giftNameSelector / giftCountMode）を書く。old.<鍵> には、置き換えてよい古い値を並べる（既定値と、前の配布の値は書かなくてよい）。_why は覚え書き（アプリは読まない）。上げるのは build/publish-dom-hints.ps1。★ 配布した目印は、次のリリースで SettingsStore.Defaults と FixSelectors にも入れる（配布は当座、既定値が本籍）。tests/test_dom_hints_file.js が形を守る。",
+ "sites": {
+  "niconico": {
+   "_why": "2026-09-17：data-name=comment-table-row / comment-body が無くなり、動きから探す受け皿で番号つきの本文が流れていた。知らせ（generalSystemMessage）はコメントにしない。ニコニ広告・ギフトは文の中に名前があり分けられないのでコメントのまま",
+   "itemSelector": "[data-name=\"comment-table-row\"], [role=\"row\"][data-comment-type]:not([data-comment-type=\"generalSystemMessage\"])",
+   "textSelector": "[data-name=\"comment-body\"], .comment-text",
+   "old": {
+    "itemSelector": [
+     "[data-name=\"comment-table-row\"]",
+     "[data-name=\"comment-table-row\"], [role=\"row\"][data-comment-type]"
+    ],
+    "textSelector": [
+     "[data-name=\"comment-body\"]"
+    ]
+   }
+  },
+  "showroom": {
+   "_why": "2026-09-17：.st-log__item はギフト記録・順位の記録にも同じ形で並ぶ。コメントだけに絞り、ギフト記録の行をギフトとして拾う。名前は dt が先に当たって「Class 28蔵馬」になっていたので、.st-fantitle-name を優先",
+   "itemSelector": ".comment-log .st-log__item:has(dd), .st-log__item:not(.gift-log *):not(.ranking-list *):not(:has(.st-gift__image)):has(dd)",
+   "nameSelector": ".st-fantitle-name, .st-logparts__define dt:not(:has(.st-fantitle-name))",
+   "giftSelector": ".gift-log .st-log__item, .st-log__item:has(.st-gift__image)",
+   "giftCountMode": "optional",
+   "old": {
+    "itemSelector": [
+     ".st-log__list .st-log__item, .st-log__item"
+    ],
+    "nameSelector": [
+     ".st-fantitle-name, .st-logparts__define dt"
+    ]
+   }
+  },
+  "whowatch": {
+   "_why": "2026-09-17：アイテムの知らせは div.comment-box.by-playitem の行（本文「ふわ粉を3個プレゼントしました」）。初コメの行にも by-playitem が付くので、数が読めたときだけ",
+   "giftSelector": ".comment-box.by-playitem .user-comment",
+   "giftNameSelector": ".message",
+   "giftCountMode": "required"
+  },
+  "mixch": {
+   "_why": "2026-09-17：スタンプの行（img[alt=stamp]）は本文が無く「16○○」がコメントとして流れていた。コメントから外し、スタンプとして拾う。知らせの行（.system-message-log）もコメントから外す",
+   "itemSelector": ".comment-scroll-container li:not(:has(img[alt=\"stamp\"])):not(:has(.system-message-log))",
+   "giftSelector": ".comment-scroll-container li:has(img[alt=\"stamp\"])",
+   "giftCountMode": "optional",
+   "old": {
+    "itemSelector": [
+     ".comment-scroll-container li"
+    ]
+   }
+  },
+  "kick": {
+   "_why": "2026-09-17：Kicks（投げ銭）の行は同じ一覧に来る。ステッカーの絵（/kicks/gifts/）で見分け、贈り物の名前は b、添え文は .whitespace-pre-line ／ 2026-09-21：名前の無い束（1〜10,000 Kicks）がほとんどで、名前が空だと全部「ギフト」に見えていた。額（span[title]）を名前の代わりに出す。",
+   "textSelector": "span.font-normal, .whitespace-pre-line",
+   "giftSelector": "[data-index]:has(img[src*=\"/kicks/gifts/\"])",
+   "giftNameSelector": "b.font-semibold",
+   "giftCountMode": "optional",
+   "old": {
+    "textSelector": [
+     "span.font-normal"
+    ]
+   },
+   "giftAmountSelector": ".font-semibold span[title]",
+   "giftAmountLabel": "Kicks"
+  },
+  "twitcasting": {
+   "_why": "2026-09-17：アイテムはコメント欄ではなく、プレイヤーの上の演出（.tw-player-sender-layout > .sender-animation）に出る。贈り主の名前は <span>名前 @id</span> なので ::first-text で名前だけ",
+   "nameSelector": ".tw-comment-item-name, .tw-player-sender__sender-name::first-text",
+   "giftSelector": ".tw-player-sender-layout .sender-animation",
+   "giftCountMode": "optional",
+   "old": {
+    "nameSelector": [
+     ".tw-comment-item-name"
+    ]
+   }
   }
+ }
 }
