@@ -1,6 +1,6 @@
 {
  "schemaVer": 1,
- "updated": "2026-09-21",
+ "updated": "2026-09-27",
  "_readme": "ブラウザ方式のサイトのコメント欄の目印（DOMセレクタ）を、リリースを待たずに配るファイル。sites.<siteId> に目印の鍵（itemSelector / nameSelector / textSelector / giftSelector / giftNameSelector / giftCountMode）を書く。old.<鍵> には、置き換えてよい古い値を並べる（既定値と、前の配布の値は書かなくてよい）。_why は覚え書き（アプリは読まない）。上げるのは build/publish-dom-hints.ps1。★ 配布した目印は、次のリリースで SettingsStore.Defaults と FixSelectors にも入れる（配布は当座、既定値が本籍）。tests/test_dom_hints_file.js が形を守る。",
  "sites": {
   "niconico": {
@@ -50,7 +50,7 @@
    }
   },
   "kick": {
-   "_why": "2026-09-17：Kicks（投げ銭）の行は同じ一覧に来る。ステッカーの絵（/kicks/gifts/）で見分け、贈り物の名前は b、添え文は .whitespace-pre-line ／ 2026-09-21：名前の無い束（1〜10,000 Kicks）がほとんどで、名前が空だと全部「ギフト」に見えていた。額（span[title]）を名前の代わりに出す。",
+   "_why": "2026-09-17：Kicks（投げ銭）の行は同じ一覧に来る。ステッカーの絵（/kicks/gifts/）で見分け、贈り物の名前は b、添え文は .whitespace-pre-line ／ 2026-09-21：名前の無い束（1〜10,000 Kicks）がほとんどで、名前が空だと全部「ギフト」に見えていた。額（span[title]）を名前の代わりに出す。 ／ 2026-09-27：コメント欄そのもの（#chatroom-messages）を足した。行（[data-index]）は書き込みがあるまで1つも無いので、これが無いと静かな配信を「作りが変わった」と読み違え、受け皿が左のおすすめチャンネルを拾ってしまう。",
    "textSelector": "span.font-normal, .whitespace-pre-line",
    "giftSelector": "[data-index]:has(img[src*=\"/kicks/gifts/\"])",
    "giftNameSelector": "b.font-semibold",
@@ -61,7 +61,8 @@
     ]
    },
    "giftAmountSelector": ".font-semibold span[title]",
-   "giftAmountLabel": "Kicks"
+   "giftAmountLabel": "Kicks",
+   "listSelector": "#chatroom-messages"
   },
   "twitcasting": {
    "_why": "2026-09-17：アイテムはコメント欄ではなく、プレイヤーの上の演出（.tw-player-sender-layout > .sender-animation）に出る。贈り主の名前は <span>名前 @id</span> なので ::first-text で名前だけ",
