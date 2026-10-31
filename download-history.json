@@ -492,6 +492,12 @@
                                    "unversioned":  0,
                                    "publishedAt":  "2026-10-29T09:11:45Z",
                                    "recordedAt":  "2026-10-31T01:53:32Z"
+                               },
+                     "1.8.2":  {
+                                   "versioned":  15,
+                                   "unversioned":  4,
+                                   "publishedAt":  "2026-10-29T16:38:58Z",
+                                   "recordedAt":  "2026-10-31T11:09:24Z"
                                }
                  }
 }
