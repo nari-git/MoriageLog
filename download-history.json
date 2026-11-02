@@ -504,6 +504,12 @@
                                    "unversioned":  3,
                                    "publishedAt":  "2026-10-30T04:43:51Z",
                                    "recordedAt":  "2026-10-31T18:53:45Z"
+                               },
+                     "1.8.4":  {
+                                   "versioned":  20,
+                                   "unversioned":  3,
+                                   "publishedAt":  "2026-10-31T01:53:20Z",
+                                   "recordedAt":  "2026-11-02T12:09:22Z"
                                }
                  }
 }
