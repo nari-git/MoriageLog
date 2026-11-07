@@ -1,6 +1,6 @@
 {
  "schemaVer": 1,
- "updated": "2026-09-27",
+ "updated": "2026-11-07",
  "_readme": "ブラウザ方式のサイトのコメント欄の目印（DOMセレクタ）を、リリースを待たずに配るファイル。sites.<siteId> に目印の鍵（itemSelector / nameSelector / textSelector / giftSelector / giftNameSelector / giftCountMode）を書く。old.<鍵> には、置き換えてよい古い値を並べる（既定値と、前の配布の値は書かなくてよい）。_why は覚え書き（アプリは読まない）。上げるのは build/publish-dom-hints.ps1。★ 配布した目印は、次のリリースで SettingsStore.Defaults と FixSelectors にも入れる（配布は当座、既定値が本籍）。tests/test_dom_hints_file.js が形を守る。",
  "sites": {
   "niconico": {
@@ -39,13 +39,14 @@
    "giftCountMode": "required"
   },
   "mixch": {
-   "_why": "2026-09-17：スタンプの行（img[alt=stamp]）は本文が無く「16○○」がコメントとして流れていた。コメントから外し、スタンプとして拾う。知らせの行（.system-message-log）もコメントから外す",
-   "itemSelector": ".comment-scroll-container li:not(:has(img[alt=\"stamp\"])):not(:has(.system-message-log))",
+   "_why": "2026-09-17：スタンプの行（img[alt=stamp]）は本文が無く「16○○」がコメントとして流れていた。コメントから外し、スタンプとして拾う。知らせの行（.system-message-log）もコメントから外す ／ 2026-11-07：本物の配信の見張り（tests/live-sites）で、入室の知らせが .system-message-log の付かない行に変わり、名前なしのコメントとして流れていた。名前（.name）のある行だけをコメントにする（同じ頁で名前つき5件・名前なし0件を確かめた）",
+   "itemSelector": ".comment-scroll-container li:not(:has(img[alt=\"stamp\"])):not(:has(.system-message-log)):has(.name)",
    "giftSelector": ".comment-scroll-container li:has(img[alt=\"stamp\"])",
    "giftCountMode": "optional",
    "old": {
     "itemSelector": [
-     ".comment-scroll-container li"
+     ".comment-scroll-container li",
+     ".comment-scroll-container li:not(:has(img[alt=\"stamp\"])):not(:has(.system-message-log))"
     ]
    }
   },
