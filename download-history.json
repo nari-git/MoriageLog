@@ -564,6 +564,12 @@
                                    "unversioned":  30,
                                    "publishedAt":  "2026-11-09T17:21:57Z",
                                    "recordedAt":  "2026-11-19T11:19:48Z"
+                               },
+                     "1.9.4":  {
+                                   "versioned":  53,
+                                   "unversioned":  15,
+                                   "publishedAt":  "2026-11-14T07:27:39Z",
+                                   "recordedAt":  "2026-11-21T11:38:27Z"
                                }
                  }
 }
