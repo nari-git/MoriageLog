@@ -576,6 +576,12 @@
                                    "unversioned":  1,
                                    "publishedAt":  "2026-11-18T09:20:53Z",
                                    "recordedAt":  "2026-11-21T16:55:58Z"
+                               },
+                     "1.9.6":  {
+                                   "versioned":  37,
+                                   "unversioned":  2,
+                                   "publishedAt":  "2026-11-19T11:19:37Z",
+                                   "recordedAt":  "2026-11-22T05:37:15Z"
                                }
                  }
 }
