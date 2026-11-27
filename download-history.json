@@ -588,6 +588,12 @@
                                    "unversioned":  1,
                                    "publishedAt":  "2026-11-21T11:38:15Z",
                                    "recordedAt":  "2026-11-27T02:39:33Z"
+                               },
+                     "1.9.8":  {
+                                   "versioned":  13,
+                                   "unversioned":  0,
+                                   "publishedAt":  "2026-11-21T16:55:52Z",
+                                   "recordedAt":  "2026-11-27T19:54:25Z"
                                }
                  }
 }
